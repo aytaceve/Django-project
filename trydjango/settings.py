@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-x%xkwfch6)r&d+yw99as5x7_og+t595zyr%q38*bq=7cg0%@#n') 
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') 
 
 # python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'  #CREATE SECRET KEY
 # uuid.uuid4()
