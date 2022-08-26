@@ -21,13 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') 
+SECRET_KEY = '3p#9u^x96s5hm)nd$7hku*p_ilt78v(-!qc=z&r-a5gk+m!88%' #os.environ.get('DJANGO_SECRET_KEY') 
 
 # python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'  #CREATE SECRET KEY
 # uuid.uuid4()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get('DEBUG')) == '1'
+DEBUG = True  #str(os.environ.get('DEBUG')) == '1'
 
 ALLOWED_HOSTS = []
 if not DEBUG:
