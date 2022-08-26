@@ -29,7 +29,7 @@ SECRET_KEY = '3p#9u^x96s5hm)nd$7hku*p_ilt78v(-!qc=z&r-a5gk+m!88%' #os.environ.ge
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  #str(os.environ.get('DEBUG')) == '1'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aytacali.pythonanywhere.com']
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
 
